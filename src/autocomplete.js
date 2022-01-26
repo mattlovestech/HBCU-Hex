@@ -3,6 +3,7 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import {Component} from "react";
 import Colors from "./colors";
+import Welcome from "./welcomeMessage";
 var json = require('./hexColors.json');
 
 export class ComboBox extends Component {
@@ -10,7 +11,7 @@ export class ComboBox extends Component {
     constructor(props) {
 
         super(props);
-        this.state = { school: "Choose a school, then copy the hex colors form below", school1:  ""}
+        this.state = { school: <Welcome/>, school1:  ""}
 
         // this.state = { school: "Alabama State" }
 
@@ -42,8 +43,7 @@ export class ComboBox extends Component {
                 color:"white"
             }}
             renderInput={(params) => <TextField  sx={{ input: { color: "white" }}} variant="filled" value={this.state.school1} {...params} onSelect={this.handleSelect} label="Search" />}
-        /><br/>
-            <small>{this.state.school}</small><br/>
+        />
             <Colors colors={this.state.school}/>
             </>
     );}

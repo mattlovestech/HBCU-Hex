@@ -1,9 +1,15 @@
 import * as React from 'react';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import Button from "@mui/material/Button";
+import {PhotoCamera} from "@mui/icons-material";
+import IconButton from "@mui/material/IconButton";
+import Autocomplete from "@mui/material/Autocomplete";
+import Welcome from "./welcomeMessage";
 var json = require('./hexColors.json');
+
 
 export default function Colors(input) {
 
@@ -13,14 +19,19 @@ export default function Colors(input) {
     switch(json[input["colors"]]) {
 
         case undefined:
-             circles = Array(~~(4)).fill(0).map( (key,index) =>
-                <div  key={index}>
-                    <div className="circle-rainbow"> </div>
-                    <h6 style={{marginBottom: "-50px", marginTop: "10px"}}>#-------</h6>
+             circles = Array(~~(1)).fill(0).map( (key,index) =>
+                <> <br/>
+                 <div  key={index}>
                     <br/>
-                    <Button style={{marginTop: "15px", backgroundColor: "white", color: "black"}} variant={"contained"}> Copy </Button>
+
+                         <a>Choose a <strong>school</strong> to see colors with hex codes</a>
+
+                    {/*<div className="circle-rainbow"/>*/}
+                    {/*<h6 style={{marginBottom: "-40px", marginTop: "10px", opacity: ".3"}}><code> ...</code></h6>*/}
+                    {/*<br/>*/}
+                    {/*<Button style={{marginTop: "15px", color: "white", opacity: ".1"}} variant={"outlined"}> ... </Button>*/}
                     {/*//    {index}*/}
-                </div>
+                </div> </>
 
             );
             break;
@@ -28,15 +39,16 @@ export default function Colors(input) {
             const colors = json[input["colors"]]
              circles = Array(~~(colors.length)).fill(0).map( (key,index) =>
                 <div  key={index}>
-                    <div style={{backgroundColor: colors[index]}} className="circle"> </div>
-                    <h6 style={{marginBottom: "-50px", marginTop: "10px"}}>{colors[index]}</h6>
                     <br/>
-                    <Button style={{marginTop: "15px", backgroundColor: "white", color: colors[index]}} variant={"contained"}> Copy </Button>
-                    {/*//    {index}*/}
+                    <div style={{backgroundColor: colors[index]}} className="circle"> </div>
+                    <h6 style={{marginBottom: "-40px", marginTop: "10px"}}><code style={{color: "white"}}>{colors[index]}</code></h6>
+                    <br/>
+                    <Button style={{marginTop: "15px",backgroundColor: "transparent", color: "white"}} variant={"text"}> {<ContentCopyIcon/>} </Button>
+
                 </div>
 
             );
-            console.log(49)
+
     }
 
 
@@ -44,9 +56,11 @@ export default function Colors(input) {
     return (
 
         <div>
+
             <Stack direction="row" spacing={2}>
                 {circles}
             </Stack>
+            <br/>
         </div>
     );
 }
