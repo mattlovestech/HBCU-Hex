@@ -15,25 +15,21 @@ export default function Colors(input) {
 
    // console.log(input["colors"].substring(0, 6))
     let circles;
+    let circlesAndButtons;
     // switch(input["colors"].substring(0, 6)) {
     switch(json[input["colors"]]) {
 
         case undefined:
+            console.log(json[input["colors"]])
              circles = Array(~~(1)).fill(0).map( (key,index) =>
                 <> <br/>
                  <div  key={index}>
                     <br/>
 
                          <a>Choose a <strong>school</strong> to see colors with hex codes</a>
-
-                    {/*<div className="circle-rainbow"/>*/}
-                    {/*<h6 style={{marginBottom: "-40px", marginTop: "10px", opacity: ".3"}}><code> ...</code></h6>*/}
-                    {/*<br/>*/}
-                    {/*<Button style={{marginTop: "15px", color: "white", opacity: ".1"}} variant={"outlined"}> ... </Button>*/}
-                    {/*//    {index}*/}
                 </div> </>
+            )
 
-            );
             break;
         default:
             const colors = json[input["colors"]]
@@ -45,9 +41,11 @@ export default function Colors(input) {
                     <br/>
                     <Button style={{marginTop: "15px",backgroundColor: "transparent", color: "white"}} variant={"text"}> {<ContentCopyIcon/>} </Button>
 
-                </div>
+                </div> );
 
-            );
+
+
+
 
     }
 
@@ -55,12 +53,16 @@ export default function Colors(input) {
 
     return (
 
-        <div>
+        <>
 
             <Stack direction="row" spacing={2}>
                 {circles}
+
             </Stack>
             <br/>
-        </div>
+
+
+
+        </>
     );
 }

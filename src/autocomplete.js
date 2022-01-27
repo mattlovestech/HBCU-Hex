@@ -4,6 +4,8 @@ import Autocomplete from '@mui/material/Autocomplete';
 import {Component} from "react";
 import Colors from "./colors";
 import Welcome from "./welcomeMessage";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 var json = require('./hexColors.json');
 
 export class ComboBox extends Component {
@@ -22,6 +24,7 @@ export class ComboBox extends Component {
         console.log("target:", event.target.value)
         switch(event.target.value) {
             case "":
+
                 break;
             default:
                 this.setState({
@@ -42,9 +45,18 @@ export class ComboBox extends Component {
             sx={{ width: 400,
                 color:"white"
             }}
-            renderInput={(params) => <TextField  sx={{ input: { color: "white" }}} variant="filled" value={this.state.school1} {...params} onSelect={this.handleSelect} label="Search" />}
+            renderInput={(params) => <TextField  sx={{ input: { color: "white" }}} variant="filled" value={this.state.school1} {...params} onSelect={this.handleSelect} onChange={this.handleSelect} label="Search" />}
         />
+
             <Colors colors={this.state.school}/>
+
+            <Stack direction="column" spacing={2} style={{marginTop: "0px"}}>
+
+                <Button variant="contained">Clear </Button>
+                <Button variant="contained">Copy All </Button>
+
+            </Stack>
+
             </>
     );}
 }
