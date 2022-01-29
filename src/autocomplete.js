@@ -25,7 +25,9 @@ export class ComboBox extends Component {
         console.log("target:", event.target.value)
         switch(event.target.value) {
             case "":
-
+                this.setState({
+                    school: ""
+                })
                 break;
             default:
                 this.setState({
@@ -36,7 +38,8 @@ export class ComboBox extends Component {
 
     }
     handleClear = (event) => {
-        this.setState({school: "a"})
+        this.setState({school: ""})
+        this.handleSelect()
 
 
 

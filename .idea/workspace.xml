@@ -22,7 +22,6 @@
     <list default="true" id="3be1cd54-3bc3-408f-90af-feaa4c7d7c28" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/autocomplete.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/autocomplete.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/colors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/colors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643154779713</updated>
-      <workItem from="1643154781003" duration="31317000" />
+      <workItem from="1643154781003" duration="32371000" />
     </task>
     <servers />
   </component>
