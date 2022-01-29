@@ -1,8 +1,9 @@
 import React, {Component, useState} from "react"
 import Button from "react-bootstrap/Button";
-import {CopyAll} from "@mui/icons-material";
+import {Check, CopyAll} from "@mui/icons-material";
 import Toast from "react-bootstrap/cjs/Toast";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import CircularProgress from "@mui/material/CircularProgress";
 
 
 export default class CopyButton extends Component {
@@ -12,16 +13,15 @@ export default class CopyButton extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            toastHidden: false
+            toastHidden: false,
+            copyIcon: <ContentCopyIcon/>
         }
     }
 
+
 // copy to clipboard function
     copyToClipboard = (str) => {
-
-        //COPY LOGIC
-        //https://www.30secondsofcode.org/blog/s/copy-text-to-clipboard-with-javascript
-        //create text area
+        this.setState({copyIcon: <CircularProgress color="success" style={{height: "25px", width: "25px"}} />})
         const el = document.createElement('textarea');
         el.value = str; //get string that was passed through
         //hide text area with css
@@ -33,14 +33,14 @@ export default class CopyButton extends Component {
         el.select(); //select str
         document.execCommand('copy'); //copy str
         document.body.removeChild(el); //remove tet area
+        setTimeout(() => {
+            this.setState({ copyIcon: <Check/> });
+        }, 600);
+        setTimeout(() => {
+            this.setState({ copyIcon: <ContentCopyIcon/> });
+        }, 5000);
 
-        // //TOAST LOGIC
-        // this.setState({
-        //     toastHidden: true
-        // })
-        // setTimeout(() => {  this.setState({
-        //     toastHidden: false
-        // }) }, 3500);
+
 
     };
 
@@ -48,7 +48,7 @@ export default class CopyButton extends Component {
 
     render() {
         return (<div>
-                <Button onClick={() => this.copyToClipboard(this.copyText)}  style={{marginTop: "15px",backgroundColor: "transparent", color: "white"}} variant={"text"}> {<ContentCopyIcon/>} </Button>
+                <Button onClick={() => this.copyToClipboard(this.copyText)}  style={{marginTop: "15px",backgroundColor: "transparent", color: "white"}} variant={"text"}> {this.state.copyIcon} </Button>
 
                 {/*<Button style={{*/}
                 {/*    width: "100%",*/}
