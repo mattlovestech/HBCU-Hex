@@ -7,6 +7,7 @@ import Welcome from "./welcomeMessage";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import CopyButton from "./copyButton";
 var json = require('./hexColors.json');
 
 export class ComboBox extends Component {
@@ -71,16 +72,17 @@ export class ComboBox extends Component {
         />
 
             <Colors colors={this.state.school}/>
-            <Stack direction="horizontal" spacing={28} style={{marginTop: "0px"}}>
+            <Stack direction="row" spacing={28} style={{marginTop: "0px", marginBottom: "50px"}}>
 
-                <Button style={{margin:"10px"}}
+                <Button style={{margin:"10px", color: "black", background : "white"}}
                         variant="contained"
                         onClick={(this.handleClear) }> Clear
                 </Button>
 
                 <Button style={{margin:"10px"}}
-                        variant="contained"> Copy All
+                        variant="contained" disabled={true}> Copy All
                 </Button>
+
 
             </Stack>
 

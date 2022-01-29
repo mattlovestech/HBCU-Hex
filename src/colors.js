@@ -24,19 +24,18 @@ export default function Colors(input) {
         case undefined:
             console.log(json[input["colors"]])
              circles = Array(~~(1)).fill(0).map( (key,index) =>
-                <> <br/>
-                 <div  key={index}>
-                    <br/>
 
+                 <div  key={index} style={{paddingBottom: "120px"}}>
+                    <br/>
                          <a>Choose a <strong>school</strong> to see colors with hex codes</a>
-                </div> </>
+                </div>
             )
 
             break;
         default:
             const colors = json[input["colors"]]
              circles = Array(~~(colors.length)).fill(0).map( (key,index) =>
-                <div  key={index}>
+                <div  key={input["colors"][index]}>
                     <br/>
                     <div style={{backgroundColor: colors[index]}} className="circle">  </div>
                     <h6 style={{marginBottom: "-40px", marginTop: "10px"}}><code style={{color: "white"}}>{colors[index]}</code></h6>
@@ -57,7 +56,7 @@ export default function Colors(input) {
 
         <>
 
-            <Stack direction="row" spacing={2}>
+            <Stack direction={"row"} spacing={2}>
                 {circles}
 
             </Stack>
