@@ -13,7 +13,7 @@ export class ComboBox extends Component {
     constructor(props) {
 
         super(props);
-        this.state = { school: <Welcome/>, school1:  ""}
+        this.state = { school:""}
 
         // this.state = { school: "Alabama State" }
 
@@ -21,6 +21,7 @@ export class ComboBox extends Component {
     }
 
     handleSelect = (event) => {
+        console.log(event)
         console.log("target:", event.target.value)
         switch(event.target.value) {
             case "":
@@ -31,6 +32,12 @@ export class ComboBox extends Component {
                     school: event.target.value
                 })
         }
+
+
+    }
+    handleClear = (event) => {
+        this.setState({school: "a"})
+
 
 
     }
@@ -45,17 +52,28 @@ export class ComboBox extends Component {
             sx={{ width: 400,
                 color:"white"
             }}
-            renderInput={(params) => <TextField  sx={{ input: { color: "white" }}} variant="filled" value={this.state.school1} {...params} onSelect={this.handleSelect} onChange={this.handleSelect} label="Search" />}
+            renderInput={(params) =>
+                <TextField  sx={{ input: { color: "white" }}}
+                            variant="filled"
+
+                            {...params} onSelect={this.handleSelect}
+                                                 onChange={this.handleSelect} label="Search" />}
         />
 
             <Colors colors={this.state.school}/>
+            <Stack direction="horizontal" spacing={28} style={{marginTop: "0px"}}>
 
-            <Stack direction="column" spacing={2} style={{marginTop: "0px"}}>
+                <Button style={{margin:"10px"}}
+                        variant="contained"
+                        onClick={(this.handleClear) }> Clear
+                </Button>
 
-                <Button variant="contained">Clear </Button>
-                <Button variant="contained">Copy All </Button>
+                <Button style={{margin:"10px"}}
+                        variant="contained"> Copy All
+                </Button>
 
             </Stack>
+
 
             </>
     );}
@@ -65,6 +83,7 @@ export class ComboBox extends Component {
 const top100Films = [
     { label: 'Alabama A&M'},
     { label: 'Alabama State'},
+
 
 
 ];

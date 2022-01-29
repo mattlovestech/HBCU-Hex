@@ -16,6 +16,7 @@ export default function Colors(input) {
    // console.log(input["colors"].substring(0, 6))
     let circles;
     let circlesAndButtons;
+
     // switch(input["colors"].substring(0, 6)) {
     switch(json[input["colors"]]) {
 
@@ -59,6 +60,7 @@ export default function Colors(input) {
                 {circles}
 
             </Stack>
+            {circlesAndButtons}
             <br/>
 
 
