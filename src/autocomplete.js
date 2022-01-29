@@ -26,6 +26,7 @@ export class ComboBox extends Component {
         console.log(event)
         console.log("target:", event.target.value)
         switch(event.target.value) {
+            case undefined:
             case "":
                 this.setState({
                     school: ""
@@ -41,7 +42,7 @@ export class ComboBox extends Component {
     }
     handleClear = (event) => {
         this.setState({school: ""})
-        this.handleSelect()
+
 
 
 

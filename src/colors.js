@@ -25,7 +25,7 @@ export default function Colors(input) {
             console.log(json[input["colors"]])
              circles = Array(~~(1)).fill(0).map( (key,index) =>
 
-                 <div  key={index} style={{paddingBottom: "120px"}}>
+                 <div  key={index}>
                     <br/>
                          <a>Choose a <strong>school</strong> to see colors with hex codes</a>
                 </div>

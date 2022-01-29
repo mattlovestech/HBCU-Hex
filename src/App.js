@@ -13,11 +13,11 @@ import DirectionStack from "./colors";
 
 function App() {
   return (
-    <div className="App wrapper">
+    <div className="wrapper">
 
 
 
-        <Navbar style={{backgroundColor: "rgba(40  ,44,52,0.25)",borderRadius: "20px" }} expand="xxl">
+        <Navbar style={{backgroundColor: "rgba(40  ,44,52,0.25)",borderRadius: "20px", textAlign: "center"}} expand="xxl">
             <Container>
                 <Navbar.Brand className="bangers" style={{fontSize: "64px", color: "white"}} href="#home">HBCU HEX </Navbar.Brand>
 
@@ -25,11 +25,11 @@ function App() {
         </Navbar>
         <br/>
         <header style={{borderRadius: "20px" }} className="App-header">
-        <h1 style={{marginTop: "20px"}}>
-        <b style={{fontSize: "38px", opacity: "0.7"}}>
+        <div style={{marginTop: "20px", textAlign: "center"}}>
+        <strong style={{fontSize: "25px",opacity: "0.7", textAlign: "center"}}>
             Get the colors of any HBCU
-        </b>
-        </h1>
+        </strong>
+        </div>
        <br/>
         <ComboBox/>
       </header>
