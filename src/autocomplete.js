@@ -84,7 +84,6 @@ export class ComboBox extends Component {
                         variant="contained" disabled={true}> Copy All
                 </Button>
 
-
             </Stack>
 
             </>
