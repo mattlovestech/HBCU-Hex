@@ -58,14 +58,14 @@ export class ComboBox extends Component {
 
     return (
         <><Autocomplete
-            disablePortal
+
             id="combo-box-demo"
             options={top100Films}
-            sx={{ width: 400,
+            sx={{ width: "70%",
                 color:"white"
             }}
             renderInput={(params) =>
-                <TextField  sx={{ input: { color: "white" }}}
+                <TextField  sx={{ input: { color: "white", borderColor: "white"}}}
                             variant="filled"
 
                             {...params} onSelect={this.handleSelect}
