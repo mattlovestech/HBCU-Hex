@@ -35,7 +35,7 @@ export default function Colors(input) {
         default:
             const colors = json[input["colors"]]
              circles = Array(~~(colors.length)).fill(0).map( (key,index) =>
-                <div  key={input["colors"][index]}>
+                <div  style={{textAlign: "center"}} key={input["colors"][index]}>
                     <br/>
                     <div style={{backgroundColor: colors[index]}} className="circle">  </div>
                     <h6 style={{marginBottom: "-40px", marginTop: "10px"}}><code style={{color: "white"}}>{colors[index]}</code></h6>
