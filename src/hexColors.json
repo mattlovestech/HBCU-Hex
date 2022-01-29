@@ -2,5 +2,13 @@
   "Alabama A&M": ["#660000", "#FFFFFF"],
   "Alabama State": ["#000000","#C99700"],
   "Albany State": ["#0033A0","#EAAA00"],
-  "Alcorn State": ["#512D6D","#CC8A00","#898D8D","#000000"]
+  "Alcorn State": ["#512D6D","#CC8A00","#898D8D","#000000"],
+  "Allen": ["white", "blue" ],
+  "American Baptist": ["white", "blue" ],
+  "Arkansas at Pine Bluff": ["white", "blue" ],
+  "Arkansas Baptist": ["white", "blue" ],
+  "Barber-Scotia": ["white", "blue" ],
+  "Benedict": ["white", "blue" ],
+  "Bennett": ["white", "blue" ],
+  "Bethune-Cookman": ["white", "blue" ]
 }

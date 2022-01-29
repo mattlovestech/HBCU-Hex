@@ -8,6 +8,7 @@ import {PhotoCamera} from "@mui/icons-material";
 import IconButton from "@mui/material/IconButton";
 import Autocomplete from "@mui/material/Autocomplete";
 import Welcome from "./welcomeMessage";
+import CopyButton from "./copyButton";
 var json = require('./hexColors.json');
 
 
@@ -40,7 +41,7 @@ export default function Colors(input) {
                     <div style={{backgroundColor: colors[index]}} className="circle">  </div>
                     <h6 style={{marginBottom: "-40px", marginTop: "10px"}}><code style={{color: "white"}}>{colors[index]}</code></h6>
                     <br/>
-                    <Button style={{marginTop: "15px",backgroundColor: "transparent", color: "white"}} variant={"text"}> {<ContentCopyIcon/>} </Button>
+                    <CopyButton copyText={colors[index]}/>
 
                 </div> );
 
