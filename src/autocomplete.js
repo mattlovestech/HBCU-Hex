@@ -57,7 +57,14 @@ export class ComboBox extends Component {
 
 
     return (
-        <><Autocomplete
+        <>
+            <div style={{paddingTop: "40px", paddingBottom: "20px", textAlign: "center"}}>
+                <a>Choose a <strong>school</strong> to see colors with hex codes</a>
+
+            </div>
+
+
+            <Autocomplete
 
             id="combo-box-demo"
             options={Object.keys(json)}
@@ -70,10 +77,7 @@ export class ComboBox extends Component {
                             {...params} onSelect={this.handleSelect}
                                                  onChange={this.handleSelect} label="Search" />}
         />
-
-            <Colors colors={this.state.school}/>
-            <Stack direction="row" spacing={28} style={{marginTop: "0px", marginBottom: "50px"}}>
-
+            <Stack direction="row" spacing={28} style={{marginTop: "20px", marginBottom: "0px"}}>
                 <Button style={{margin:"10px", color: "black", background : "white"}}
                         variant="contained"
                         onClick={(this.handleClear) }> Clear
@@ -82,8 +86,10 @@ export class ComboBox extends Component {
                 <Button style={{margin:"10px"}}
                         variant="contained" disabled={true}> Copy All
                 </Button>
-
             </Stack>
+
+            <Colors colors={this.state.school}/>
+
 
             </>
     );}
