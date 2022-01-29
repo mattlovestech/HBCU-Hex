@@ -60,9 +60,8 @@ export class ComboBox extends Component {
         <><Autocomplete
 
             id="combo-box-demo"
-            options={top100Films}
-            sx={{ width: "70%",
-                color:"white"
+            options={Object.keys(json)}
+            sx={{ width: "70%"
             }}
             renderInput={(params) =>
                 <TextField  sx={{ input: { color: "white", borderColor: "white"}}}
@@ -91,11 +90,11 @@ export class ComboBox extends Component {
 }
 
 // Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
-const top100Films =
-    // 'Alabama A&M',
-    // 'Alabama State',
-Object.keys(json)
-
-
-;
+// const top100Films =
+//     // 'Alabama A&M',
+//     // 'Alabama State',
+//
+//
+//
+// ;
 
