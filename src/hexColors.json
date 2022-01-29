@@ -1,4 +1,6 @@
 {
   "Alabama A&M": ["#660000", "#FFFFFF"],
-  "Alabama State": ["#000000","#C99700"]
-  }
+  "Alabama State": ["#000000","#C99700"],
+  "Albany State": ["#0033A0","#EAAA00"],
+  "Alcorn State": ["#512D6D","#CC8A00","#898D8D","#000000"]
+}

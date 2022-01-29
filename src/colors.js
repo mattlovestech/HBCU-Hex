@@ -37,7 +37,7 @@ export default function Colors(input) {
              circles = Array(~~(colors.length)).fill(0).map( (key,index) =>
                 <div  key={index}>
                     <br/>
-                    <div style={{backgroundColor: colors[index]}} className="circle"> </div>
+                    <div style={{backgroundColor: colors[index]}} className="circle">  </div>
                     <h6 style={{marginBottom: "-40px", marginTop: "10px"}}><code style={{color: "white"}}>{colors[index]}</code></h6>
                     <br/>
                     <Button style={{marginTop: "15px",backgroundColor: "transparent", color: "white"}} variant={"text"}> {<ContentCopyIcon/>} </Button>
