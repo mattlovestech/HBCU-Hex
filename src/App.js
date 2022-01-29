@@ -27,7 +27,7 @@ function App() {
         </Navbar>
         <div style={{marginTop: "20px", textAlign: "center"}}>
             <strong style={{fontSize: "25px", textAlign: "center"}}>
-                Get the colors of any HBCU
+                Find the colors of any HBCU
             </strong>
         </div>
         <br/>
