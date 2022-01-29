@@ -6,6 +6,7 @@ import Colors from "./colors";
 import Welcome from "./welcomeMessage";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 var json = require('./hexColors.json');
 
 export class ComboBox extends Component {
@@ -83,10 +84,11 @@ export class ComboBox extends Component {
 }
 
 // Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
-const top100Films = [
-    { label: 'Alabama A&M'},
-    { label: 'Alabama State'},
+const top100Films =
+    // 'Alabama A&M',
+    // 'Alabama State',
+Object.keys(json)
 
 
+;
 
-];
