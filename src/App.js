@@ -26,9 +26,9 @@ function App() {
             </Container>
         </Navbar>
         <div style={{marginTop: "20px", textAlign: "center"}}>
-            <strong style={{fontSize: "25px", textAlign: "center"}}>
-                Find the colors of any HBCU
-            </strong>
+            {/*<strong style={{fontSize: "25px", textAlign: "center"}}>*/}
+            {/*    Find the colors of any HBCU*/}
+            {/*</strong>*/}
         </div>
         <br/>
         <header style={{borderRadius: "20px" }} className="App-header">

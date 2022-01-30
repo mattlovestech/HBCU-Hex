@@ -22,14 +22,14 @@ export default function Colors(input) {
     switch(json[input["colors"]]) {
 
         case undefined:
-            console.log(json[input["colors"]])
-             circles = Array(~~(1)).fill(4).map( (key,index) =>
+
+             circles = Array(~~(4)).fill(4).map( (key,index) =>
 
                 //  <div  key={index}>
                 //     <br/>
                 //          <a>Choose a <strong>school</strong> to see colors with hex codes</a>
                 // </div>
-                 <div  style={{textAlign: "center"}} key={index}>
+                 <div  style={{textAlign: "center", opacity: ".05"}} key={index}>
                      <br/>
                      <div style={{backgroundColor: "white"}} className="circle">  </div>
                      <h6 style={{marginBottom: "-40px", marginTop: "10px"}}><code style={{color: "white"}}>{"..."}</code></h6>

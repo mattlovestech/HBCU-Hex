@@ -59,7 +59,7 @@ export class ComboBox extends Component {
     return (
         <>
             <div style={{paddingTop: "40px", paddingBottom: "20px", textAlign: "center"}}>
-                <a>Choose a <strong>school</strong> to see colors with hex codes</a>
+                <a>Choose a <strong>school</strong> to find their colors with hex codes</a>
 
             </div>
 
