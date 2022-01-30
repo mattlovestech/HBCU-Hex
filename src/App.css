@@ -40,8 +40,8 @@
 
 .circle {
   display: flex;
-  width: 75px;
-  height: 75px;
+  width: 65px;
+  height: 66px;
   background-color: green;
   border-radius: 50%;
   text-align: center;
