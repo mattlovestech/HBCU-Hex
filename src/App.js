@@ -7,6 +7,7 @@ import Container from "@mui/material/Container";
 import React from "react";
 import Stack from "@mui/material/Stack";
 import DirectionStack from "./colors";
+import FullWidthGrid from "./layout";
 
 
 
@@ -26,9 +27,7 @@ function App() {
             </Container>
         </Navbar>
         <div style={{marginTop: "20px", textAlign: "center"}}>
-            {/*<strong style={{fontSize: "25px", textAlign: "center"}}>*/}
-            {/*    Find the colors of any HBCU*/}
-            {/*</strong>*/}
+
         </div>
         <br/>
         <header style={{borderRadius: "20px" }} className="App-header">
@@ -48,6 +47,7 @@ function App() {
 
               <br/>
           </div>
+
       </div>
   );
 }
