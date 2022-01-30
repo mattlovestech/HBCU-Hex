@@ -63,9 +63,8 @@
 .text {
   margin: auto;
 }
-
 .wrapper {
-  height: 150%;
+  height: 100%;
   width: 100%;
   left:0;
   right: 0;
@@ -74,15 +73,14 @@
   padding: 30px !important;
   position: absolute;
   background: linear-gradient(124deg,
- #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840,
-  #1ddde8, #2b1de8, #dd00f3, #dd00f3
+ #ff2400, #ff2400, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3
   );
   background-size: 1800% 1800%;
 
-  -webkit-animation: rainbow 20s ease infinite;
-  -z-animation: rainbow 20s ease infinite;
-  -o-animation: rainbow 20s ease infinite;
-  animation: rainbow 20s ease infinite;}
+  -webkit-animation: rainbow 10s ease infinite;
+  -z-animation: rainbow 10s ease infinite;
+  -o-animation: rainbow 10s ease infinite;
+  animation: rainbow 10s ease infinite;}
 
 @-webkit-keyframes rainbow {
   0%{background-position:0% 82%}
