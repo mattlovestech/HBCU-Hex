@@ -42,7 +42,7 @@ function App() {
         Created with love by @mattlovestech
 
     </div>
-          <div style={{paddingBottom: "49px"}}>
+          <div style={{marginBottom: "49px"}}>
               <br/>
 
               <br/>

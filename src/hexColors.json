@@ -27,7 +27,7 @@
   "University of the District of Columbia": ["unknown", "unknown" ],
   "Edward Waters": ["unknown", "unknown" ],
   "Elizabeth City State": ["#264391", "#FFFFFF" ],
-  "Fayetteville State ": ["unknown", "unknown" ],
+  "Fayetteville State ": ["#0067B1", "#B0B7BC" ],
   "Fisk": ["unknown", "unknown" ],
   "Florida A&M": ["#F4811F", "#008344" ],
   "Florida Memorial": ["unknown", "unknown" ],
@@ -102,8 +102,8 @@
   "West Virginia State": ["unknown", "unknown" ],
   "Wilberforce": ["unknown", "unknown" ],
   "Wiley": ["unknown", "unknown" ],
-  "Winston-Salem State": ["unknown", "unknown" ],
-  "Xavier": ["unknown", "unknown" ]
+  "Winston-Salem State": ["#c8102e", "#a7a8aa", "#ffcd00" ],
+  "Xavier": ["#FFC530", "#FFFFFF", "#000000", "#00A887"]
 }
 
 
