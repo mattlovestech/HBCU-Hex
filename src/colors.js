@@ -30,9 +30,8 @@ export default function Colors(input) {
                 //          <a>Choose a <strong>school</strong> to see colors with hex codes</a>
                 // </div>
                  <div  style={{textAlign: "center", opacity: ".05"}} key={index}>
-                     <br/>
                      <div style={{backgroundColor: "white"}} className="circle">  </div>
-                     <h6 style={{marginBottom: "-40px", marginTop: "10px"}}><code style={{color: "white"}}>{"..."}</code></h6>
+                     <h6 style={{marginBottom: "-45px", marginTop: "5px"}}><code style={{color: "white"}}>{"..."}</code></h6>
                      <br/>
                      <CopyButton copyText={"none"}/>
 
@@ -44,9 +43,8 @@ export default function Colors(input) {
             const colors = json[input["colors"]]
              circles = Array(~~(colors.length)).fill(0).map( (key,index) =>
                 <div  style={{textAlign: "center"}} key={input["colors"][index]}>
-                    <br/>
                     <div style={{backgroundColor: colors[index]}} className="circle">  </div>
-                    <h6 style={{marginBottom: "-40px", marginTop: "10px"}}><code style={{color: "white"}}>{colors[index]}</code></h6>
+                    <h6 style={{marginBottom: "-45px", marginTop: "5px"}}><code style={{color: "white"}}>{colors[index]}</code></h6>
                     <br/>
                     <CopyButton copyText={colors[index]}/>
 
@@ -69,7 +67,7 @@ export default function Colors(input) {
 
             </Stack>
             {circlesAndButtons}
-            <br/>
+
 
 
 
