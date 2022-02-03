@@ -37,16 +37,11 @@ function App() {
         <br/>
         <br/>
         Created with love 🥰 by @mattlovestech
-
     </div>
-          <div style={{marginBottom: "49px"}}>
-              <br/>
-
-              <br/>
-          </div>
-
       </div>
   );
 }
+
+
 
 export default App;

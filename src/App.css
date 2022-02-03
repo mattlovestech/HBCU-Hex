@@ -64,12 +64,12 @@
   margin: auto;
 }
 .wrapper {
-  height: 100%;
-  width: 100%;
-  left:0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  height: 100vh;
+
+  /*left:0;*/
+  /*right: 0;*/
+  /*top: 0;*/
+  /*bottom: 0;*/
   padding: 30px !important;
   position: absolute;
   background: linear-gradient(124deg,
@@ -118,4 +118,13 @@
 
 .whiteButton {
 
+}
+html, body {
+  margin:0px;
+  height:100%;
+}
+
+.box {
+  background:red;
+  height:100%;
 }
