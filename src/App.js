@@ -14,10 +14,10 @@ import FullWidthGrid from "./layout";
 
 function App() {
   return (
-      <div>
+      <div className="wrapper">
 
 
-    <div className="wrapper">
+    <div >
 
 
 
@@ -39,7 +39,7 @@ function App() {
 <Button style={{marginTop: "15px",backgroundColor: "white", color: "black"}} variant={"constrained"}> Report an Issue</Button>
         <br/>
         <br/>
-        Created with love by @mattlovestech
+        Created with love 🥰 by @mattlovestech
 
     </div>
           <div style={{marginBottom: "49px"}}>
