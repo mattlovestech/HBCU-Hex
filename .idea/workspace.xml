@@ -22,7 +22,7 @@
     <list default="true" id="3be1cd54-3bc3-408f-90af-feaa4c7d7c28" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hexColors.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/hexColors.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,7 @@
       <workItem from="1643896274475" duration="1573000" />
       <workItem from="1643902612093" duration="334000" />
       <workItem from="1643906812931" duration="70000" />
-      <workItem from="1643906897061" duration="870000" />
+      <workItem from="1643906897061" duration="3369000" />
     </task>
     <servers />
   </component>
