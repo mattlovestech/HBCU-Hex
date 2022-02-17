@@ -23,9 +23,6 @@ function App() {
                 <Navbar.Brand className="bangers" style={{fontSize: "64px", color: "white"}} href="#home">HBCU HEX </Navbar.Brand>
             </Container>
         </Navbar>
-        <div style={{marginTop: "20px", textAlign: "center"}}>
-
-        </div>
         <br/>
         <header style={{borderRadius: "20px" }} className="App-header">
         <ComboBox/>
@@ -35,7 +32,10 @@ function App() {
 
 <Button style={{marginTop: "15px",backgroundColor: "white", color: "black"}} variant={"constrained"}> Report an Issue</Button>
         <br/>
-        <br/>
+
+
+        <a href="https://www.producthunt.com/posts/hbcu-hex?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-hbcu-hex" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=331958&theme=light" alt="HBCU HEX - Find hex colors of any HBCU | Product Hunt" style={{width: "250px", height: "54px"}} width="250" height="54" /></a>
+
         Created with love 🥰 by @mattlovestech
     </div>
       </div>

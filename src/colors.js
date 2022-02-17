@@ -64,7 +64,6 @@ export default function Colors(input) {
 
             <Stack direction={"row"} spacing={2}>
                 {circles}
-
             </Stack>
             {circlesAndButtons}
 
