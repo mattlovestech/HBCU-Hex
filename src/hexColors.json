@@ -99,9 +99,9 @@
   "Virginia Union": ["unknown", "unknown" ],
   "Virginia University of Lynchburg": ["unknown", "unknown" ],
   "Voorhees": ["unknown", "unknown" ],
-  "West Virginia State": ["unknown", "unknown" ],
-  "Wilberforce": ["unknown", "unknown" ],
-  "Wiley": ["unknown", "unknown" ],
+  "West Virginia State": ["#d6b853", "#242423" ],
+  "Wilberforce": ["#efcf0c", "#056132" ],
+  "Wiley": ["#3D2C68", "#65538F", "#414042", "#B1B6C1" ], 
   "Winston-Salem State": ["#c8102e", "#a7a8aa", "#ffcd00" ],
   "Xavier": ["#FFC530", "#FFFFFF", "#000000", "#00A887"]
 }
