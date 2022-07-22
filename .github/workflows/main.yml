@@ -49,8 +49,8 @@ jobs:
         run: |
          git status  
          git add -A
+         git commit -m "added out files for js doc"
          git status
-         git push
-         git status
+         echo done
 
 
