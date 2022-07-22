@@ -47,7 +47,9 @@ jobs:
           
       - name: git status 
         run: |
-         git status  
+         git status 
+         git config --global user.name "Matthew Manning"
+         git config --global user.email "mattlovestech@github.com"
          git add -A
          git commit -m "added out files for js doc"
          git status
