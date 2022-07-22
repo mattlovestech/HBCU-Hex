@@ -52,6 +52,7 @@ jobs:
          git config --global user.email "mattlovestech@github.com"
          git add -A
          git commit -m "added out files for js doc"
+         git push
          git status
          echo done
 
