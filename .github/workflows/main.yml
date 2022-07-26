@@ -40,11 +40,10 @@ jobs:
   # You may pin to the exact commit or the version.
   # uses: andstor/jsdoc-action@06eafccd94e3fedcbf4ff0a8f23d775c169efdf2
         uses: andstor/jsdoc-action@v1.2.1
-#         with:
-#           source_dir: ./src
-#           recurse: true
-#           output_dir: ./out
-          
+        with:
+          source_dir: ./src
+          recurse: true
+          output_dir: ./out
       - name: git status 
         run: |
          git status 
@@ -53,7 +52,8 @@ jobs:
          git add -A
          git commit -m "added out files for js doc"
          git push
-         git status
+         git status          
+
 
 
 
